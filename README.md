@@ -1,10 +1,10 @@
-# About
+## About
 This crate provides the [`Winit`](crate::Winit) widget,
-a [`canvas`](leptos::html::Canvas) element with a
-[`Window`](winit::window::Window) and
-[`EventLoop`](winit::event_loop::EventLoop).
+a [`canvas`]([leptos::html::Canvas](https://docs.rs/leptos/latest/leptos/html/struct.Canvas.html)) element with a
+[`Window`]([winit::window::Window](https://docs.rs/winit/latest/winit/window/struct.Window.html)) and
+[`EventLoop`]([winit::event_loop::EventLoop](https://docs.rs/winit/latest/winit/event_loop/struct.EventLoop.html)).
 
-# Example
+## Example
 ```rust
 use leptos::*;
 use leptos_winit::*;
@@ -34,7 +34,7 @@ async fn run(event_loop: EventLoop<()>, window: Rc<Window>) {
     });
 }
 ```
-# Multiple windows
+## Multiple windows
 Winit does not support creating multiple
 [`EventLoop`](winit::event_loop::EventLoop)s, so
 only one `Winit` widget can be loaded on the page at a
